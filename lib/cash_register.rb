@@ -19,6 +19,7 @@ def add_item(item, price, quantity = 1)
       @@items << item
       i += 1
     end
+  else @@items << item
   end
   @total += price * quantity
 end
