@@ -15,7 +15,7 @@ end
 def add_item(item, price, quantity = 1)
   quantity.times {@@items << item}
   @total += price * quantity
-  @@last_item_price = price
+  @@last_item_price = price * quantity
 end
 
 def apply_discount
